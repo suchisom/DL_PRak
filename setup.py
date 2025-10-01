@@ -7,7 +7,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "DL_PRak"
 AUTHOR_USER_NAME = "suchisom"
-SRC_REPO = REPO_NAME
+SRC_REPO = "DL_PRak"
 AUTHOR_EMAIL = "suzzzylabs@gmail.com"
 
 setuptools.setup(
@@ -17,7 +17,7 @@ setuptools.setup(
     author_email=AUTHOR_EMAIL,
     description="Package for tracking bugs , description, etc",
     long_description=long_description,
-    long_description_content="text/markdown",
+    long_description_content_type ="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
