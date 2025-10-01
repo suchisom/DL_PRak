@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: DL_PRak
+Version: 0.0.0
+Summary: Package for tracking bugs , description, etc
+Home-page: https://github.com/suchisom/DL_PRak
+Author: suchisom
+Author-email: suzzzylabs@gmail.com
+Project-URL: Bug Tracker, https://github.com/suchisom/DL_PRak/issues
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+# DL_PRak
