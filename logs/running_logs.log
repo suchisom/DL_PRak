@@ -2,3 +2,188 @@
 [2025-10-01 23:03:17,485: INFO: test: Welcome to our custom log]
 [2025-10-01 23:25:02,548: INFO: test: Welcome to our custom log]
 [2025-10-01 23:25:20,033: INFO: test: Welcome to our custom log]
+[2025-10-03 01:58:01,115: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 01:58:01,116: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 01:58:01,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 01:58:01,117: INFO: common: created directory at: artifacts]
+[2025-10-03 01:58:01,117: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 01:58:01,117: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url']
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/pipleine/stage01_dataingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/config/configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url'
+[2025-10-03 01:59:09,912: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 01:59:09,913: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 01:59:09,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 01:59:09,913: INFO: common: created directory at: artifacts]
+[2025-10-03 01:59:09,913: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 01:59:09,913: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url']
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/pipleine/stage01_dataingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/config/configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url'
+[2025-10-03 02:02:57,595: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 02:02:57,597: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 02:02:57,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 02:02:57,598: INFO: common: created directory at: artifacts]
+[2025-10-03 02:02:57,598: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 02:02:57,599: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'source_url'. Did you mean: 'source_URL'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'source_url'. Did you mean: 'source_URL'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/pipleine/stage01_dataingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/config/configuration.py", line 28, in get_data_ingestion_config
+    source_url=config.source_url,
+               ^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/venv/lib/python3.12/site-packages/box/box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'". Did you mean: 'source_URL'?
+[2025-10-03 02:03:25,752: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 02:03:25,753: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 02:03:25,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 02:03:25,754: INFO: common: created directory at: artifacts]
+[2025-10-03 02:03:25,754: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 02:03:25,755: ERROR: main: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url']
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/pipleine/stage01_dataingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/config/configuration.py", line 26, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+                            ^^^^^^^^^^^^^^^^^^^^
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_url'
+[2025-10-03 02:05:44,020: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 02:05:44,021: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 02:05:44,022: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 02:05:44,022: INFO: common: created directory at: artifacts]
+[2025-10-03 02:05:44,022: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 02:05:44,022: INFO: data_ingestion: Trying to download file...]
+[2025-10-03 02:05:44,022: INFO: data_ingestion: Download started...]
+[2025-10-03 02:05:44,022: ERROR: main: 'DataIngestionConfig' object has no attribute 'source_URL']
+Traceback (most recent call last):
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/pipleine/stage01_dataingestion.py", line 12, in main
+    data_ingestion.download_file()
+  File "/home/michu/Desktop/dlendtoend/DL_PRak/src/DL_PRak/components/data_ingestion.py", line 21, in download_file
+    url=self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionConfig' object has no attribute 'source_URL'. Did you mean: 'source_url'?
+[2025-10-03 02:07:24,933: INFO: main: >>>>>>> stage data ingestion stage start <<<<<<]
+[2025-10-03 02:07:24,934: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-10-03 02:07:24,934: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-10-03 02:07:24,935: INFO: common: created directory at: artifacts]
+[2025-10-03 02:07:24,935: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-10-03 02:07:24,935: INFO: data_ingestion: Trying to download file...]
+[2025-10-03 02:07:24,935: INFO: data_ingestion: Download started...]
+[2025-10-03 02:07:39,612: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 22329406
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "e33c4dcc8f22340234fac4b9da4a20b304912be521f658008139809163a077ea"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 09CA:A53F8:576ED:D535E:68DEE284
+Accept-Ranges: bytes
+Date: Thu, 02 Oct 2025 20:37:27 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210052-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1759437446.676096,VS0,VE2106
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 15de6ff23ab3ddaf775b42466c6f8c30b7b3b28c
+Expires: Thu, 02 Oct 2025 20:42:27 GMT
+Source-Age: 2
+
+]
+[2025-10-03 02:07:39,612: INFO: data_ingestion: unzipping file and removing unawanted files]
+[2025-10-03 02:07:39,652: INFO: data_ingestion: removing file:artifacts/data_ingestion/PetImages/Dog/11702.jpg of size: ~ 0 KB]
+[2025-10-03 02:07:39,689: INFO: main: >>>>>>>> data ingestion stage completed <<<<<<]

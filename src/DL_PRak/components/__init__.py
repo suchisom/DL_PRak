@@ -1,0 +1,1 @@
+from DL_PRak.components.data_ingestion import DataIngestion
