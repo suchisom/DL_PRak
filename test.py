@@ -1,3 +1,3 @@
-from DL_PRak import logging
+from DL_PRak import logger
 
-logging.info("Welcome to our custom log")
+logger.info("Welcome to our custom log")
